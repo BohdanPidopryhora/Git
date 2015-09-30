@@ -1,0 +1,14 @@
+__author__ = 'BohdanPidopryhora'
+
+"""
+Initiation of chess desk 8x8
+with letters and numbers
+"""
+desk = []
+line1 = [ "1" + i for i in ["a","b","c","d","e","f","g","h"]]
+line2 = [ "2" + i for i in ["a","b","c","d","e","f","g","h"]]
+desk.append(line2)
+desk.append(line1)
+desk
+print('\n'.join([''.join(['{:3}'.format(item) for item in row]) 
+      for row in desk]))
