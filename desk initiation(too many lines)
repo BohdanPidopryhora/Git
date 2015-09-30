@@ -1,0 +1,19 @@
+desk = []
+line1 = [ "1" + i for i in ["a","b","c","d","e","f","g","h"]]
+line2 = [ "2" + i for i in ["a","b","c","d","e","f","g","h"]]
+line3 = [ "3" + i for i in ["a","b","c","d","e","f","g","h"]]
+line4 = [ "4" + i for i in ["a","b","c","d","e","f","g","h"]]
+line5 = [ "5" + i for i in ["a","b","c","d","e","f","g","h"]]
+line6 = [ "6" + i for i in ["a","b","c","d","e","f","g","h"]]
+line7 = [ "7" + i for i in ["a","b","c","d","e","f","g","h"]]
+line8 = [ "8" + i for i in ["a","b","c","d","e","f","g","h"]]
+desk.append(line8)
+desk.append(line7)
+desk.append(line6)
+desk.append(line5)
+desk.append(line4)
+desk.append(line3)
+desk.append(line2)
+desk.append(line1)
+print('\n'.join([''.join(['{:4}'.format(item) for item in row]) 
+      for row in desk]))
