@@ -1,0 +1,14 @@
+def creation(name, pnumber):
+    contacts.append([name, pnumber])
+    
+def read(name):
+    for contact in contacts:
+        if contact[0] == name:
+            print contact[1]
+
+
+contacts = []
+name = "Bob"
+pnumber = "24333543"
+creation(name,pnumber)
+read(name)
